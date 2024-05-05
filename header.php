@@ -9,7 +9,7 @@
 <header>
     <div class="headerInner">
         <div class="siteLogo">
-            <img src="img/logo.png" alt="Dummy">
+            <a href="/"><img src="img/logo.png" alt="Dummy"></a>
         </div>
         <nav class="siteNav">
             <ul class="navList">

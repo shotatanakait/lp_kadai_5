@@ -2,7 +2,7 @@
 ?>
 <footer>
     <div class="footerInner">
-        <img src="img/logo.png" alt="Dummy">
+        <a href="/"><img src="img/logo.png" alt="Dummy"></a>
     </div>
 </footer>
 
