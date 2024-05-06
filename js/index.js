@@ -40,6 +40,18 @@ $(function() {
         }
     });
 
+    // SCHEDULE CLICK EVENT
+    $('.scheduleBox').click(function() {
+        const scheduleBoxId = $(this).attr('id').slice(-1);
+        const activeScheduleDescriptionText = '#scheduleDescriptionText' + scheduleBoxId;
+
+        $('.scheduleBox').removeClass('active');
+        $(this).addClass('active');
+
+        $('.scheduleDescriptionText').removeClass('active');
+        $(activeScheduleDescriptionText).addClass('active');
+    });
+
     // SWIPER
     const swiper = new Swiper('.swiper', {
         loop: true,

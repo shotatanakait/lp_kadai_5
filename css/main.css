@@ -2,3 +2,100 @@
 .firstView {
   padding-top: 64px;
 }
+
+/* catch copy */
+.catchCopySection {
+  margin: 4rem 2rem 0;
+}
+.catchCopySectionTitle {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.catchCopyRed {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 6rem;
+}
+
+/* schedule */
+.scheduleSection {
+  margin: 6.4rem 2rem 0;
+}
+.scheduleSectionTitle {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.scheduleCategory {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 980px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 -2px 5px 1px #ccc;
+}
+/* scheduleBox */
+.scheduleBox {
+  padding: 1.4rem 0;
+  width: calc(980px / 3);
+  border-bottom: 3px solid #BEA574;
+  background-color: #ccc;
+}
+.scheduleBox:hover {
+  cursor: pointer;
+}
+.scheduleBox:hover,
+.scheduleBox.active {
+  background-color: #BEA574;
+  transition: 0.3s;
+}
+/* scheduleTitle */
+.scheduleTitle {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  color: #666;
+}
+.scheduleBox.active .scheduleTitle,
+.scheduleBox:hover .scheduleTitle{
+  color: #fff;
+}
+/* scheduleDescription */
+.scheduleDescription {
+  max-width: 980px;
+  margin: 0 auto;
+  box-shadow: 0 2px 5px 1px #ccc;
+}
+.scheduleDescriptionText {
+  padding: 4rem 2rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  display: none;
+}
+.scheduleDescriptionText.active {
+  display: block;
+}
+
+/* tablet */
+@media screen and (max-width: 768px) {
+}
+
+/* sp */
+@media screen and (max-width: 480px) {
+  .catchCopySectionTitle {
+    font-size: 1.6rem;
+  }
+  .catchCopyRed {
+    font-size: 4rem;
+  }
+  .scheduleCategory {
+    flex-direction: column;
+    align-items: center;
+  }
+  .scheduleBox {
+    width: 100%;
+  }
+}

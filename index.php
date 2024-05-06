@@ -38,6 +38,32 @@
             </div>
         </section>
 
+        <!-- catch copy -->
+        <section id="catchCopy" class="catchCopySection">
+            <h1 class="catchCopySectionTitle">今年も始まる<span class="catchCopyRed">夏祭り</span></h1>
+        </section>
+
+        <!-- schedule -->
+        <section id="schedule" class="scheduleSection">
+            <h1 class="scheduleSectionTitle">スケジュール</h1>
+            <div class="scheduleCategory">
+                <div id="scheduleBox1" class="scheduleBox active">
+                    <h2 class="scheduleTitle">9月1日</h2>
+                </div>
+                <div id="scheduleBox2" class="scheduleBox">
+                    <h2 class="scheduleTitle">9月2日</h2>
+                </div>
+                <div id="scheduleBox3" class="scheduleBox">
+                    <h2 class="scheduleTitle">9月3日</h2>
+                </div>
+            </div>
+            <div class="scheduleDescription">
+                <p id="scheduleDescriptionText1" class="scheduleDescriptionText active">9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容 9月1日の内容</p>
+                <p id="scheduleDescriptionText2" class="scheduleDescriptionText">9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容 9月2日の内容</p>
+                <p id="scheduleDescriptionText3" class="scheduleDescriptionText">9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容 9月3日の内容</p>
+            </div>
+        </section>
+
     </article>
 
     <!-- footer -->
