@@ -64,6 +64,18 @@
             </div>
         </section>
 
+        <!-- access -->
+        <section id="access" class="accessSection">
+            <h1 class="accessSectionTitle">アクセス</h1>
+            <div class="accessMap" id="accessMap">
+                <p class="accessMapText">〒771-1154 徳島県徳島市応神町東貞方南川淵</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6607.067016154703!2d134.51810734466196!3d34.10708907594893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3553725a43298fb3%3A0x1bc47188f8f9226a!2z44CSNzcxLTExNTQg5b6z5bO255yM5b6z5bO25biC5b-c56We55S65p2x6LKe5pa55Y2X5bed5re1!5e0!3m2!1sja!2sjp!4v1715004543474!5m2!1sja!2sjp"
+                    width="100%"
+                    height="450"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
         <!-- contact -->
         <section id="contact" class="contactSection">
             <h1 class="contactSectionTitle">席予約</h1>

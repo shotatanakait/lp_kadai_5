@@ -78,6 +78,22 @@
 .scheduleDescriptionText.active {
   display: block;
 }
+/* access */
+.accessSection {
+  margin: 6.4rem 2rem 0;
+}
+.accessSectionTitle {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.accessMapText {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
 /* contact */
 .contactSection {
   margin: 6.4rem 2rem;
@@ -165,6 +181,12 @@
   }
   .scheduleBox {
     width: 100%;
+  }
+  .accessSection {
+    margin: 6.4rem 0 0;
+  }
+  .accessMapText {
+    margin: 0 2rem 0.4rem;
   }
   .contactForm {
     width: 100%;
