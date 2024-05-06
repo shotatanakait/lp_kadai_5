@@ -1,3 +1,4 @@
-@import url('./common.css');
-@import url('./header.css');
-@import url('./footer.css');
+/* firstView */
+.firstView {
+  padding-top: 64px;
+}
