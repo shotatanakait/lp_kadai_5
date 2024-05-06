@@ -64,6 +64,39 @@
             </div>
         </section>
 
+        <!-- contact -->
+        <section id="contact" class="contactSection">
+            <h1 class="contactSectionTitle">席予約</h1>
+            <form action="./confirm.php" method="post" class="contactForm" id="contactForm">
+                <div class="formGroup">
+                    <label for="contactFormName" class="contactFormLabel">お名前<span class="required">*必須</span></label>
+                    <input name="name" id="contactFormName" type="text" class="contactFormInput" placeholder="例)田中 太郎" required>
+                </div>
+                <div class="formGroup">
+                    <label for="contactFormSeat" class="contactFormLabel">席の場所<span class="required">*必須</span></label>
+                    <select name="seat" id="contactFormSeat" class="contactFormSelect" required>
+                        <option value="" selected disabled>---</option>
+                        <?php
+                            $seats = ['SS席', 'S席', 'A席', 'B席', 'C席'];
+                            foreach ($seats as $seat) {
+                                echo '<option value="' . $seat . '">' . $seat . '</option>';
+                            }
+                        ?>
+                    </select>
+                </div>
+                <div class="formGroup">
+                    <label for="contactFormMail" class="contactFormLabel">メールアドレス<span class="required">*必須</span></label>
+                    <input id="contactFormMail" type="email" class="contactFormInput" placeholder="例)abcd123@example.com" required>
+                </div>
+                <div class="formGroup">
+                    <label for="contactFormTel" class="contactFormLabel">電話番号<span class="optional">*任意</span></label>
+                    <input id="contactFormTel" name="tel" type="tel" class="contactFormInput" placeholder="例)09012345678">
+                    <span class="errorMessage" id="errorMessage"></span>
+                </div>
+                <input type="submit" class="contactFormSubmit" id="contactFormSubmitButton" value="送信" disabled>
+            </form>
+        </section>
+
     </article>
 
     <!-- footer -->
