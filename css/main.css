@@ -21,7 +21,8 @@
 
 /* schedule */
 .scheduleSection {
-  margin: 6.4rem 2rem 0;
+  margin: 0 2rem;
+  padding-top: 6.4rem;
 }
 .scheduleSectionTitle {
   font-size: 1.6rem;
@@ -80,7 +81,8 @@
 }
 /* access */
 .accessSection {
-  margin: 6.4rem 2rem 0;
+  margin: 0 2rem;
+  padding-top: 6.4rem;
 }
 .accessSectionTitle {
   font-size: 1.6rem;
@@ -96,7 +98,8 @@
 }
 /* contact */
 .contactSection {
-  margin: 6.4rem 2rem;
+  margin: 0 2rem 6.4rem;
+  padding-top: 6.4rem;
 }
 .contactSectionTitle {
   font-size: 1.6rem;
@@ -183,7 +186,7 @@
     width: 100%;
   }
   .accessSection {
-    margin: 6.4rem 0 0;
+    margin: 0;
   }
   .accessMapText {
     margin: 0 2rem 0.4rem;

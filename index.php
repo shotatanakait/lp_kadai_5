@@ -9,6 +9,7 @@
 </head>
 <body>
     <!-- header -->
+    <?php $prefix = ''; ?>
     <?php include('header.php'); ?>
 
     <!-- contents -->

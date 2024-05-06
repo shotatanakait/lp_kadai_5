@@ -1,8 +1,8 @@
 <?php
     $navList = [
-        'スケジュール' => './index.html#schedule',
-        'アクセス' => './index.html#access',
-        '席予約' => './index.html#reservation'
+        'スケジュール' => $prefix . '#schedule',
+        'アクセス' => $prefix . '#access',
+        '席予約' => $prefix . '#contact'
     ];
 ?>
 
