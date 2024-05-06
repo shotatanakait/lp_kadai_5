@@ -46,3 +46,14 @@
 .slide3 {
   background-image: url(../img/slide_3.jpg);
 }
+
+/* tablet */
+@media screen and (max-width: 768px) {
+}
+
+/* sp */
+@media screen and (max-width: 480px) {
+  .swiper {
+    height: 450px;
+  }
+}
