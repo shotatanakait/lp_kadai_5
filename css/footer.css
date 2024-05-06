@@ -1,0 +1,16 @@
+footer {
+  background-color: #BEA574;
+  width: 100%;
+  height: 64px;
+}
+.footerInner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerInner img {
+  width: 100px;
+  height: auto;
+}
