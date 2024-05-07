@@ -50,7 +50,7 @@
                         -->
                     </th>
                     <td class="confirmSectionBtnArea">
-                        <form action="complete.php" method="post">
+                        <form action="thanks.php" method="post">
                             <input type="hidden" name="name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
                             <input type="hidden" name="seat" value="<?php echo htmlspecialchars($_POST['seat']); ?>">
                             <input type="hidden" name="email" value="<?php echo htmlspecialchars($_POST['email']); ?>">

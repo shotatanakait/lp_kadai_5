@@ -209,6 +209,18 @@
   background-color: #BEA574;
 }
 
+/* thanks */
+.thanksSection {
+  margin: 0 2rem;
+  padding-top: calc(6.4rem + 2rem);
+}
+.thanksSectionTitle {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
 /* tablet */
 @media screen and (max-width: 768px) {
 }
