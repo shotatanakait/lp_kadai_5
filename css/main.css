@@ -161,9 +161,52 @@
   color: #fff;
   opacity: .5;
 }
-.contactFormSubmit:hover {
+.contactFormSubmit:not(:disabled):hover {
   opacity: .9;
   transition: 0.3s;
+}
+
+/* confirm */
+.confirmSection {
+  /* margin: 0 2rem 6.4rem; */
+  margin: 0 2rem;
+  padding-top: calc(6.4rem + 2rem);
+}
+.confirmSectionTitle {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.confirmSectionTable {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 980px;
+  font-size: 1.6rem;
+}
+.confirmSectionTable th {
+  height: 48px;
+  font-weight: normal;
+}
+.confirmSectionBtnArea {
+  text-align: center;
+}
+.confirmSectionBtn {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #fff;
+}
+.confirmSectionBtn:hover {
+  opacity: .9;
+  transition: 0.3s;
+}
+.btnBack {
+  background-color: #ccc;
+}
+.btnSend {
+  background-color: #BEA574;
 }
 
 /* tablet */
