@@ -99,14 +99,18 @@
                 </div>
                 <div class="formGroup">
                     <label for="contactFormMail" class="contactFormLabel">メールアドレス<span class="required">*必須</span></label>
-                    <input id="contactFormMail" type="email" class="contactFormInput" placeholder="例)abcd123@example.com" required>
+                    <input name="email" id="contactFormMail" type="email" class="contactFormInput" placeholder="例)abcd123@example.com" required>
                 </div>
                 <div class="formGroup">
                     <label for="contactFormTel" class="contactFormLabel">電話番号<span class="optional">*任意</span></label>
                     <input id="contactFormTel" name="tel" type="tel" class="contactFormInput" placeholder="例)09012345678">
                     <span class="errorMessage" id="errorMessage"></span>
                 </div>
-                <input type="submit" class="contactFormSubmit" id="contactFormSubmitButton" value="送信" disabled>
+                <?php if (isset($_SERVER['HTTP_REFERER']) && strpos($_SERVER['HTTP_REFERER'], 'confirm.php') !== false): ?>
+                    <input type="submit" class="contactFormSubmit" id="contactFormSubmitButton" value="送信">
+                <?php else: ?>
+                    <input type="submit" class="contactFormSubmit" id="contactFormSubmitButton" value="送信" disabled>
+                <?php endif; ?>
             </form>
         </section>
 
