@@ -90,8 +90,9 @@ $(function() {
     });
 
     // FORM INPUT OR SELECT EVENT
-    $('#contactForm input[required], #contactForm select[required]').on('input', function() {
-        let allFilled = true;
+    let allFilled = true;
+    const inputRequiredCallback = function() {
+        allFilled = true;
         $('#contactForm input[required], #contactForm select[required]').each(function() {
             if ($(this).is('input') && $(this).val() === '') {
                 allFilled = false;
@@ -105,7 +106,11 @@ $(function() {
         } else {
             $('#contactFormSubmitButton').prop('disabled', true);
         }
-    });
+    }
+    // ページ読込み時
+    inputRequiredCallback();
+    // 入力時
+    $('#contactForm input[required], #contactForm select[required]').on('input', inputRequiredCallback);
 
     // FOCUS EVENT
     $('input[name="tel"]').focus(function() {

@@ -106,11 +106,7 @@
                     <input id="contactFormTel" name="tel" type="tel" class="contactFormInput" placeholder="例)09012345678">
                     <span class="errorMessage" id="errorMessage"></span>
                 </div>
-                <?php if (isset($_SERVER['HTTP_REFERER']) && strpos($_SERVER['HTTP_REFERER'], 'confirm.php') !== false): ?>
-                    <input type="submit" class="contactFormSubmit" id="contactFormSubmitButton" value="送信">
-                <?php else: ?>
-                    <input type="submit" class="contactFormSubmit" id="contactFormSubmitButton" value="送信" disabled>
-                <?php endif; ?>
+                <input type="submit" class="contactFormSubmit" id="contactFormSubmitButton" value="送信" disabled>
             </form>
         </section>
 
