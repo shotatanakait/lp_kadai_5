@@ -83,7 +83,15 @@
             <form action="./confirm.php" method="post" class="contactForm" id="contactForm">
                 <div class="formGroup">
                     <label for="contactFormName" class="contactFormLabel">お名前<span class="required">*必須</span></label>
-                    <input name="name" id="contactFormName" type="text" class="contactFormInput" placeholder="例)田中 太郎" required>
+                    <input
+                        name="name"
+                        id="contactFormName"
+                        type="text"
+                        class="contactFormInput"
+                        placeholder="例)田中 太郎"
+                        value="<?php if (isset($_POST['name'])) echo htmlspecialchars($_POST['name']); ?>"
+                        required
+                    >
                 </div>
                 <div class="formGroup">
                     <label for="contactFormSeat" class="contactFormLabel">席の場所<span class="required">*必須</span></label>
@@ -92,6 +100,10 @@
                         <?php
                             $seats = ['SS席', 'S席', 'A席', 'B席', 'C席'];
                             foreach ($seats as $seat) {
+                                if (isset($_POST['seat']) && $_POST['seat'] === $seat) {
+                                    echo '<option value="' . $seat . '" selected>' . $seat . '</option>';
+                                    continue;
+                                }
                                 echo '<option value="' . $seat . '">' . $seat . '</option>';
                             }
                         ?>
@@ -99,11 +111,26 @@
                 </div>
                 <div class="formGroup">
                     <label for="contactFormMail" class="contactFormLabel">メールアドレス<span class="required">*必須</span></label>
-                    <input name="email" id="contactFormMail" type="email" class="contactFormInput" placeholder="例)abcd123@example.com" required>
+                    <input
+                        name="email"
+                        id="contactFormMail"
+                        type="email"
+                        class="contactFormInput"
+                        placeholder="例)abcd123@example.com"
+                        value="<?php if (isset($_POST['email'])) echo htmlspecialchars($_POST['email']); ?>"
+                        required
+                    >
                 </div>
                 <div class="formGroup">
                     <label for="contactFormTel" class="contactFormLabel">電話番号<span class="optional">*任意</span></label>
-                    <input id="contactFormTel" name="tel" type="tel" class="contactFormInput" placeholder="例)09012345678">
+                    <input
+                        id="contactFormTel"
+                        name="tel"
+                        type="tel"
+                        class="contactFormInput"
+                        placeholder="例)09012345678"
+                        value="<?php if (isset($_POST['tel'])) echo htmlspecialchars($_POST['tel']); ?>"
+                    >
                     <span class="errorMessage" id="errorMessage"></span>
                 </div>
                 <input type="submit" class="contactFormSubmit" id="contactFormSubmitButton" value="送信" disabled>

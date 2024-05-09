@@ -41,23 +41,19 @@
                     <td><?php echo htmlspecialchars($_POST['tel']); ?></td>
                 </tr>
                 <tr>
-                    <th class="confirmSectionBtnArea">
-                        <button type="button" onclick="window.history.back();" class="confirmSectionBtn btnBack">戻る</button>
-                        <!--
-                        <form action="index.php" method="post">
-                            <button type="submit" class="confirmSectionBtn btnBack">戻る</button>
-                        </form>
-                        -->
-                    </th>
-                    <td class="confirmSectionBtnArea">
-                        <form action="thanks.php" method="post">
-                            <input type="hidden" name="name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-                            <input type="hidden" name="seat" value="<?php echo htmlspecialchars($_POST['seat']); ?>">
-                            <input type="hidden" name="email" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-                            <input type="hidden" name="tel" value="<?php echo htmlspecialchars($_POST['tel']); ?>">
-                            <button type="submit" class="confirmSectionBtn btnSend">送信</button>
-                        </form>
-                    </td>
+                    <form id="confirmForm" method="post">
+                        <input type="hidden" name="name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+                        <input type="hidden" name="seat" value="<?php echo htmlspecialchars($_POST['seat']); ?>">
+                        <input type="hidden" name="email" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+                        <input type="hidden" name="tel" value="<?php echo htmlspecialchars($_POST['tel']); ?>">
+
+                        <th class="confirmSectionBtnArea">
+                            <button type="submit" class="confirmSectionBtn btnBack" onclick="document.getElementById('confirmForm').action='index.php#contact';">戻る</button>
+                        </th>
+                        <td class="confirmSectionBtnArea">
+                            <button type="submit" class="confirmSectionBtn btnSend" onclick="document.getElementById('confirmForm').action='thanks.php';">送信</button>
+                        </td>
+                    </form>
                 </tr>
             </table>
         </section>
